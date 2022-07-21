@@ -1,0 +1,97 @@
+###Change the directory to your home directory.
+
+ls
+
+###Print out your current directory.
+
+pwd
+
+###Create a folder named Algo1.
+
+mkdir Algo1
+
+###Within Algo1, create subfolders named config, bin, logs, and scripts.
+
+mkdir config
+mkdir bin
+mkdir logs
+mkdir scripts
+
+###Within config, create empty files named config.config and variables.
+
+touch Algo1/config config.config
+touch Algo1/config variables
+
+###Within scripts, create empty files named start.sh, stop.sh and admin.sh.
+
+touch Algo1/scripts start.sh
+touch Algo1/scripts stop.sh
+touch Algo1/scripts admin.sh
+
+###Within logs, create an empty file named today.log.
+
+
+
+
+###Go back to your home directory.
+
+cd
+
+Long list everything recursively.
+
+
+
+
+
+
+Remove the file named variables in the config directory.
+
+
+
+
+Remove the bin directory that you previously created.
+
+
+
+
+Change back to your home directory.
+
+
+Create the bin directory again within Algo1.
+
+
+
+Create a directory in the logs folder named oldlogs.
+
+
+
+Within oldlogs, create folders named 2019, 2018, and 2017.
+
+
+
+Within 2017, create an empty file named 2017.log.
+
+
+
+Within 2018, create an empty file named 2018.log.
+
+
+
+Within 2019, create an empty file named 2019.log.
+
+
+
+Change back to your home directory.
+
+
+
+Remove oldlogs using one command.
+
+
+
+Ensure you are in your home directory.
+
+
+Search for all files from your home directory that end in .sh.
+
+Go into the scripts directory and use a command to remove both the start and stop script without specifying each file separately: rm s*.sh
