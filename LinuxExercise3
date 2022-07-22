@@ -64,7 +64,7 @@ echo $PATH
 
 17###If you have Algo1 still created from previous exercises, remove the directory structure and all files within it
 
-rmdir -r ~/Algo1
+rm -r ~/Algo1
 
 18###Make a directory named Payment1
 
@@ -108,7 +108,7 @@ pwd
 
 28###Remove the directory Payment1 along with all subdirectories
 
-rmdir -r ~/Payment1
+rm -r ~/home/Payment1
 
 29###Delete the cat.output file, but with a warning first to the user
 
