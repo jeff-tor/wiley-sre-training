@@ -65,7 +65,7 @@ grep -c buy buyMessages.log
 
 ##Create a new version of the logfile named noNewOrders.log that has everything except new order messages in it and put it in the logs directory.
 
-
+grep -v "39=0" fixlog9213091209321903129030219.log > noNewOrders.log
 
 ##Count how many words are in the noNewOrders.log.
 
