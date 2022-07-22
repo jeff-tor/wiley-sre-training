@@ -1,0 +1,59 @@
+1###Create a variable named STOCK and assign it a value of AAPL
+
+STOCK="AAPL"
+
+2###Print the value of the variable out to the screen
+
+echo $STOCK
+
+3###Change the value of the variable STOCK to be the previous value with _US appended onto the end
+
+STOCK="AAPL_US"
+
+4###Create a new variable named PRICE with value 290.84
+
+PRICE=290.84
+
+5###Print out to the screen a sentence ‘The current price of is ’ where you call the variables and get their values
+
+echo The current price of $STOCK is $PRICE
+
+6###Create a variable named WHOAMI and assign it your current username. Do this in one command.
+
+WHOAMI=hostname
+
+7###Using just $ and () assign a variable named SERVERTYPE by using the uname command
+
+SERVERTYPE=$(uname)
+
+8###Write a command to show to the screen the value of running the command assigned to SERVERTYPE
+
+echo $SERVERTYPE
+
+9###Assign a variable named CMD the command uname -i (not the value of running the command but the command itself)
+
+CMD="uname -i"
+
+10###Using echo and the variable CMD, show how you echo the value of CMD (not execute the command)
+
+echo $CMD
+
+11###Using echo and the variable CMD, print what the CMD returns when run to the screen
+
+echo `$CMD`
+
+12###Change directory to your home directory
+
+cd
+
+13###Create a directory named scripts
+
+mkdir scripts
+
+14###Print out your $PATH Value
+
+echo $PATH
+
+15###Append your newly created script directory to your path variable
+
+export PATH=$PATH:/wiley-sre-training/LinuxExercise3
