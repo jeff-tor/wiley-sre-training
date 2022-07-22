@@ -96,6 +96,8 @@ man cat > cat.output
 
 25###Change the permission of that file so everyone can read it but only the group can write and execute
 
+sudo chmod 774 cat.output
+
 26###Go back to your home directory
 
 cd
