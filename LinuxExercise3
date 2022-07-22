@@ -137,3 +137,4 @@ rmdir ~/home/temp
 35###Run the following command to store your results in the specified directory the trainer gave. Replace the name and date with the correct values:
 
 history > jeff.220722.module4
+:q
