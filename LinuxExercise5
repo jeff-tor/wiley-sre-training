@@ -32,12 +32,21 @@ ps > /Users/Jeff/practice_sre_training/list
 
 ##Run the following series of commands:
 
-sleep 300 &
-Find this command by checking the processes and running a grep
-Stop the process using the process id
-Run a command to see a dynamic view of all the processes running on your host.
+--sleep 300 &
+
+--Find this command by checking the processes and running a grep
+ps grep 27176
+
+--Stop the process using the process id
+sudo kill -9 27176
+
+--Run a command to see a dynamic view of all the processes running on your host.
+btop
 
 ##Now run the same command but specifically only for root.
+
+ps grep "root"
+sudo kill -9 xxxxx
 
 ##Experiment with the following commands while running top and note your observations:
 
