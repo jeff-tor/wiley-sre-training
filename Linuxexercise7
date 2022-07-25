@@ -1,0 +1,25 @@
+--Exit and save THE file.
+	:wq
+--Run a word count on THE file.
+	g then press ctrl+g	
+--Edit THE file to add a blank line and type in "word count" followed by THE value you just got.
+	press o then type in "word count: 171"
+--Now use search and replace within THE editor to replace every instance of THE word THE with THE. Ensure that you only catch THE word THE and not words that contain THE letters THE (like them).
+	:%s/\<the\>/THE/g
+--Copy THE first line of THE file and paste it after your word count entry at THE bottom of THE file.
+	press yy on the first line and then p on the bottom of the file
+--Delete THE first line of THE file.
+	press dd
+--Undo that deletion.
+	press u
+--Insert at THE top of THE file THE text "Captain America – Endgame" followed by an empty line.
+	press gg and press o (?)
+--Save THE changes and exit THE editor.
+	press :wq
+--Find out THE number of lines in THE file now.
+	g then press ctrl+g
+--Write THE number of lines into THE file one line above THE word count with THE text "line count" plus THE value.
+--Delete "Good luck" wherever it occurs in THE file.
+	:%s/\<Good Luck\>//g
+--Save and exit THE file
+	:wq
