@@ -28,7 +28,7 @@ ps -eo pid,cmd,user
 
 ##Run a process check to pull all of the process ids running on the server and put the output into a file named list in your home directory.
 
-ps > /home
+ps > /Users/Jeff/practice_sre_training/list
 
 ##Run the following series of commands:
 
