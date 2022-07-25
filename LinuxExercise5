@@ -24,7 +24,7 @@ pstree
 
 ##Run a process check on the server but only output the User, pid and cmd columns to your results.
 
-ps
+ps -eo pid,cmd,user
 
 ##Run a process check to pull all of the process ids running on the server and put the output into a file named list in your home directory.
 
