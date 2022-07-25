@@ -11,7 +11,7 @@
 --Delete THE first line of THE file.
 	press dd
 --Undo that deletion.
-	press u
+	press ctrl+r 
 --Insert at THE top of THE file THE text "Captain America – Endgame" followed by an empty line.
 	press gg and press o (?)
 --Save THE changes and exit THE editor.
