@@ -1,0 +1,52 @@
+--Create a directory named logs.
+
+	mkdir logs
+
+--Move the log output from the fixGenerator script into the logs directory. (Be sure the script has finished before doing this.)
+
+	mv fixlog123456.log logs	
+
+--From the command line, replace all instances of MTHREE in the file with M3 and put the output into a new file named fixlog2.log in the logs directory.
+
+	sed -i 's/MTHREE/M3/g' fixlog123456.log > fixlog2.log
+
+--Run a command to pull all fill messages from fixlog2.log and put the output into a new logfile named fills.log. (You may need to look up how to tell if a message is a fill.)
+
+	grep 35=7 fixlog2.log > fills.log		
+
+--Run a command to pull all cancel acknowledgement messages (39=4) from fixlog2.log into a new log named cancels.log in the same directory.
+
+	grep 39=4 fixlog2.log > cancels.log
+
+--Run a command to create a new log file named partialFills.log and add the partial fills from fills.log to the new file.
+
+	grep 35=3 fills.log > partialFills.log
+
+--Use awk to create a new file out of the partial fill log that has the following tags only: Symbol (55); orderID (11); side(54); fill price (31); fill quantity (32); execution id (17). Name the file parsedPartialFills.log and make sure you print the columns in the order listed here.
+
+	awk '{print $1,$2,$3,$4,$5,$6}' partialFillslog > parsedPartialFills.log	
+
+--Using an editor, remove the first part of every fix tag (so you are left with the value only) and turn the file into a comma separated list with no spaces. This is how you might have to get a file ready to send to a trader.
+
+	use vim and replace every ; with , -> Use :%s/\<;\>/,/g
+	use vim and replace every 35= with blank -> Use :%s/\<35=\>//g
+
+	alternatively use sed to replace
+	sed -i 's/35=//g' parsedPartialFills.log | sed -i 's/;/,/g' parsedPartialFills.log
+
+--In the file, add a row of column headers separated by commas. The headers should be Symbol, OrderID, Side, Price, Qty, and ExecID.
+	
+	sed -i 'Symbol,OrderID,Side,Price,Qty,ExecID' parsedPartialFills.log 
+
+--Make a copy of the cancels file and name it cancels2.log.
+
+	cp cancels.log cancels2.log
+
+--Open the cancels2.log file in an editor. Find the first symbol (tag 55) in the first line and add the letter A to the beginning of the value. (If it was 55=GOOG, it will become 55=AGOOG.)
+
+	:g/55=/ s/$/ A/g
+
+--Run a difference between the original cancels file and the new file you just edited.
+
+	diff cancels.log cancels2.log
+
