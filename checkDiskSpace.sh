@@ -1,5 +1,5 @@
 #!/bin/bash
 
-df -h
+df -h > diskSpaceSummary.txt
 
 end
