@@ -9,6 +9,7 @@
 --Run an additional command to send the terminal to sleep for 700 seconds in the background.
 
 	sleep 700 &
+
 --View all running jobs.
 
 	jobs
