@@ -1,0 +1,5 @@
+total 24
+-rw-r--r--  1 jeff  staff   0 Jul 28 11:48 list.txt
+-rw-r--r--  1 jeff  staff  13 Jul 28 11:46 seq1.txt
+-rw-r--r--  1 jeff  staff  14 Jul 28 11:47 seq2.txt
+-rw-r--r--  1 jeff  staff  16 Jul 28 11:47 seq3.txt
