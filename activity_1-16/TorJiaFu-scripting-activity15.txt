@@ -1,0 +1,23 @@
+#!/bin/bash -v 
+
+if [[ -d ~/Fixgen/Logs ]]
+then
+	echo FixGen/Logs exists in directory, continuing
+else
+	mkdir ~/FixGen/Logs
+fi
+
+filePath=$(pwd)
+
+fileList=$(ls -lt | tail -n +5)
+echo $?
+
+echo $filePath
+
+Date=$(date +'%m-%d-%y')
+echo $?
+###I need to pipe the tar -cvf called compiled.tar.gz $filePath | with the list of $fileList
+## tar -cvf compiled.tar.gz $filePath | $fileList
+
+./fixGenerator.sh > /Users/jeff/Documents/fixlog_${Date}.log
+echo $?

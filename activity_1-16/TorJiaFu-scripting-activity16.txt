@@ -1,0 +1,7 @@
+#!/bin/bash -v
+
+sed 's/;/,/g' fixlog20220731113206.log > fixlog-parsed.csv
+
+cat fixlog-parsed.csv | awk '{print $2}' | xargs -n1 | sort | uniq -c 
+
+

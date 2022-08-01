@@ -1,0 +1,11 @@
+#!/bin/bash
+
+###./fixGenerator.sh
+
+while IFS=";" read -r rec_column1 rec_column2 rec_column3 rec_column4
+do
+	echo order for $rec_column1  with order id $rec_column1, $rec_column2 shares at price $rec_column3
+
+done < <(tail -n +2 fixlog20220731113206.log)
+
+

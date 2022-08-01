@@ -1,0 +1,15 @@
+#!/bin/bash
+
+
+touch file_testing
+touch file_testing_2
+
+file1="/Users/jeff/Documents/Github/wiley-sre-training/activity_1-16/file_testing
+file2="/Users/jeff/Documents/Github/wiley-sre-training/activity_1-16/file_testing_2
+
+if cmp -s "$file1" "$file2";
+then
+	echo the files have the same name
+else
+	echo the files have different names
+fi

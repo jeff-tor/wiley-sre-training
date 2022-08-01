@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+req_length=8
+req_spc=1
+echo "Please enter Password:"
+
+read password
+
+len=$(echo -n $password | wc -c)
+if [ $len -ge $req_length ]
+then
+spc=$(echo $password | grep [A-Za-z][0-9] | grep "[@#$%^&*]")
+else
+echo weak password
+fi
+if [[ "$spc" < "$req_spc" ]]
+then
+echo strong password
+else
+echo weak password
+fi

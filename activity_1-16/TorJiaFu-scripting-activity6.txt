@@ -1,0 +1,35 @@
+#!/bin/bash
+
+number='^[0-9]+$'
+
+echo "Please enter value A: "
+read a
+
+if ! [[ $a =~ $number ]] ;
+then
+echo "Error: Please key in a number";
+
+	else
+	echo "Please enter value B: "
+	read b
+fi
+
+	if ! [[ $b =~ $number ]] ;
+	then
+	echo "Error: Please key in a number";
+	
+		else
+		if [ $a -gt $b ]
+		then
+		echo "True"
+		else
+		echo "False"
+
+	fi
+		fi
+		
+		difference=$(expr $a - $b)
+		echo The difference is $difference
+		
+
+

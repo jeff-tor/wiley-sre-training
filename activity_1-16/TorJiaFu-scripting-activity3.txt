@@ -1,0 +1,14 @@
+#!/bin/bash
+
+LUCKY_NUM_ARRAY=$(shuf -i 1-50 -n5)
+
+echo The 5 lucky numbers are $LUCKY_NUM_ARRAY, congrats!
+
+
+for i in $LUCKY_NUM_ARRAY
+if( i < 10)
+then $(shuf -i 1-50 -n1)>>LUCKY_NUM_BONUS
+echo $LUCKY_NUM_BONUS
+fi
+
+

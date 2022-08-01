@@ -1,0 +1,37 @@
+#1/bin/bash
+
+q1="coder"
+echo "Q1: What is your name?"
+read answer_q1
+
+if [[ $answer_q1 == $q1 ]] 
+then
+	echo "Good"
+else
+	echo "Wrong Answer, the answer is $q1"
+fi
+	q2="Mars"
+	echo "Q2: Where do you live?"
+	read answer_q2
+
+	if [[ $answer_q2 == $q2 ]]
+	then
+		echo "Good"
+	else
+		echo "Wrong Answer, the answer is $q2"
+	fi
+
+		q3="Exciting"
+		echo "Q3: How do you find this course?"
+		read answer_q3
+
+		if [[ $answer_q3 == $q3 ]]
+		then
+			echo "Good"
+			echo "That's all for today's quiz, thanks!"
+		else
+		
+			echo "No pls, the course is $q3"
+			echo "That's all for today's quiz, thanks!"
+		fi
+

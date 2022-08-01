@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo enter values
+while read line
+do
+	echo enter values
+	my_array=("${my_array[@]}" $line)
+	len=${#my_array[@]}	
+		if (( $len == 5 ))
+		then	
+			echo "Do you wish to continue"
+			read user_input
+			elif [[ "$user_input" == "Y" ]]
+			then
+			echo "break sequence!"
+			else	
+			echo "Continuing"
+		fi	
+done
+echo ${my_array[@]}

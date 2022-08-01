@@ -1,0 +1,10 @@
+#!/bin/bash
+
+only_in_file1=$(comm -23 <(sort file1) <(sort file2))
+echo Only in file 1: $only_in_file1
+
+only_in_file2=$(comm -13 <(sort file1) <(sort file2))
+echo Only in file 2: $only_in_file2
+
+echo in Both files:
+comm -12 file1 file2

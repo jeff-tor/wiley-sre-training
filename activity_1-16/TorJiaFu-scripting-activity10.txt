@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo key in the file name
+read file_name
+touch $file_name
+
+echo key in number of values
+read value
+i=1
+
+while [ $i -le $value ]
+do
+	echo $RANDOM >> $file_name
+	i=$((i+1))
+done 

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+for f in *
+do
+	if [ -f "$f" ]
+	then
+	mv -- "$f" "$f-$(date +%Y-%m-%d)"
+
+	fi
+done

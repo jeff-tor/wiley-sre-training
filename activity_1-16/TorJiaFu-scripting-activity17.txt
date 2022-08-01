@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sed 's/ /,/g' fixlog20220731113206.log > fixlog-parsed.log
+sed '1s/^/<Client, Message type, stock, quantity, price, side, order id, last quantity, exec id, last price\n>/' fixlog-parsed.log >> fixlog-parsed.log
+
+
+
+
+
+
+
+

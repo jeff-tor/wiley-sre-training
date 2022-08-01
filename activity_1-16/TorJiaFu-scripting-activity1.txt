@@ -1,0 +1,20 @@
+#!/bin/bash
+
+USERNAME=$(whoami)
+echo Your Username is $USERNAME
+
+DATE=$(date +%d-%m-%y)
+echo The current Date is $DATE
+
+TIME=$(date +%H:%M:%S)
+echo The current Time is $TIME
+
+CURRENT_DIRECTORY=$(pwd)
+echo You are currently on $CURRENT_DIRECTORY
+
+FILES_IN_DIRECTORY=$(ls | wc -l)
+echo There are $FILES_IN_DIRECTORY files in this folder
+
+BIGGEST_FILE=$(du -a $(pwd) | sort -n -r | head -n 1)
+echo The biggest file in $CURRENT_DIRECTORY is $BIGGEST_FILE
+
