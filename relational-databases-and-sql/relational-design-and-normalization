@@ -1,0 +1,37 @@
+in this chapter you will learn how to
+
+explain the purpose of normalizing a table
+define the update,insert and delete anormalies in databases
+describe functional dependencies in database
+normalize a database into 1NF, 2NF, 3NF
+discuss the purpose of denormalizing a table
+
+normalization is the process of breakdown down complex nested tables into simpler structures
+data redundancy - the act of storing same piece of data multiple times in the database.
+update anormaly - refers to the act of not fully updating a similar set of duplicated records, thus creating a discrepancy.
+
+insert/delete anormaly - refers to being unable to insert any records due to non existent key columns and deleting records causing a main record in the key column completely deleted from the database.
+
+functional dependencies refers to the dependency relationship, in good database design, all columns will depend on at least one column in the table
+
+process of normalizing database tables involve a sequences of rules called normal forms (NF). Each normal form builds on those under it to prevent anormalies by nesting it 1 level down (referring to 1NF), from a industry practical standpoint it is reccomended to leave up to 3NF to eliminate most redundancy, insert, update and delete anormalies.
+
+first normal form - to achieve 1NF the following criteria must be satified
+there is no top-bottom ordering of rows
+there is no left-right ordering of columns
+each row can be uniquely identified
+each field in the table contains only 1 value
+
+example below
+
+ORG.ITEM | Item | Type | Weight |
+   1	 |  22	|  FG  |  500	|
+   2	 |  21	|  RM  |  151	|
+   3	 |  22	|  RM  |  350	|
+
+second normal form - basically table needs to be already in 1NF, and to further nest it down to 2NF
+third normal form - same as previous, needs to be in 2NF, further nested to 3NF
+
+third normal form notes - there is a transitive dependency in 3NF as for e.g a type is dependent on the weightand the weight is dependent on the org.item, if transitive dependency is not present, there will be an issue. Essentially, type should depend on the weight, which should depend on the org.item for e.g. If we update the weight and not the type we will face update anormalies if there is no transitive dependency.
+
+denormalization - simply refers to the de-nesting all the tables back into their original form for the purposes of better performance, such as iterating through every record with a "for/if/while loop" these dernormalized data tables are optimized for aggregating and reporting data.

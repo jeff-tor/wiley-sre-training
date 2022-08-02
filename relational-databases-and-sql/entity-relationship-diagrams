@@ -1,0 +1,28 @@
+in this chapter you will learn how to
+
+create an ERD that includes tables, field and relationships identified by the end of database normalization process
+include appropriate meta data about database components, like PK and FK, data types and nullability
+
+using ERDs help us to identify the tables and field the database will have. ERDs are a visual representation of the database structure that:
+
+helps to identify places where proposed structure may not work, identifying these problems during the design phase will help avoid problems later when doing SQL scripting.
+
+allows teammates to see database structure, quickly identify fields and tables.
+
+presents a single, condensed representation of the structure, allowing for more efficient SQL scripting
+
+
+available tools to construct ERD - draw.io and ERDPlus
+
+a well designed ERD consist of the following:
+
+tables required by the database, including the name of each table
+a list of fields contained in each table
+metadata of each field such as name, data type, and NOT NULL or etc.
+identification of all PKs and FKs
+entity relationship between each table in the database
+
+
+ERDs are important tools in RDBs because they provide a visualisation of database structures. They are useful throughout all phases of the database administration process, from creation to retrieval. Refer to lucidchart's page : what is an entity relationship diagram.
+
+
