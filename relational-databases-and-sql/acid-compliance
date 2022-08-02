@@ -1,0 +1,32 @@
+in this chapter you will how to
+
+define a database transaction
+identify ACID principles
+describe purpose of a transaction log
+discuss database backup strategies
+
+In a relational database, transactions can be performed by the way of:
+Create new data
+Read existing data
+Update existing data
+Delete data
+and Adding or Modifying schemas such as tables and relationships
+
+a transaction is defined as one or more actions that represent a single unit of work. For e.g: a customer who is making payment will need to transfer money fromaccount A to account B, this is represented as 1 unit, and this transaction should succeed or fail as a unit.
+
+ACID can be defined as:
+
+Atomicity
+Consistency
+Isolation
+Durability
+
+Atomocity refers to an atomic transaction that follows the "all or nothing" rule. If part of the transaction fails, then the entire transaction fails. You can refer to the previous banking transaction example as reference.
+
+Consistency is valid if a transaction can move the database from a valid state to another valid state. Consistent database have strict rules on data types and sizes that are allowed within columns and tables. Enforcement of PKs and FKs are present to prevent duplicate records and issues such as orphan records. For e.g: if Cust ID was a PK and product order was the record related to Cust ID, there should not be a product order without a Cust ID, addiitonally, there should not be a duplicate Cust ID in the primary table as well.
+
+Isolation refers to the invisibility of transactions to other users while it is being completed. This is known as concurrency control. There are multiple updates within a database table and if transactions are not isolated, inconsistent data will be present. There are 2 ways to isolate transactions:
+
+Serializable - person a will not receive data until person b changes are commmitted. The data will be locked until the transaction is complete
+
+Read Uncommitted - person a will get data instantly, including uncommitted changes, this is also know as dirty reads. Dirty reads will also read uncommitted data if a transactions fail. This can be problematic as data will be inaccurate if failed transactions are also queried.

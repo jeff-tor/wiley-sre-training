@@ -1,0 +1,37 @@
+in this chapters you will learn about
+
+what a relational database is and how it works
+difference between RDB and RDBMS
+tables,column,rows,attributes,records,tuplies and data types
+compare different types of keys
+explain different referencing relationships
+
+
+Tables = Data with rows and columns, can also be known as records and attributes, these terms are used depending on the software.
+
+Data Types = INTERGER, VARCHAR, BOOLEAN, FLOAT, and they all represent the types of data that can be "legally" stored in that column within the table. Choosing the right data type for the column can also help with space efficiency.
+
+RDB = relational database (This is a group of tables that are related to each other)
+
+DMBS = Database Management System, which is used for updating databases, such as performing CRUD operations (Create Read Update Delete) and also updating schemas, etc.
+
+Keys in a table : In a relational database, tables are related to each other via a key, and they can be known as Primary or Foreign/Surrogate Keys.
+
+Below is a simple example 
+
+Table 1				Table 2
+Cust ID | Name	|		Cust ID| Product	|
+PRI Key	|	|		FRN Key	|		|
+	|	|			|		|
+
+These 2 tables are related by their Cust ID, and 1 Cust ID can have multiple products ordered, this is also know nas a One-Many entity relationship.
+
+Referencing Relationships: Tables are related via Keys, and via their type of relationships. There are 3 main types
+
+One-One
+One-Many
+Many-Many
+
+These entity relationships determine how should records in primary tables be stored and deleted, and provides safeguards against deleting a single record in a primary key column of a table, in order to delete such records, an operation called CASCADE DELETE can be used. However this is dangerous, as doing so will recursively delete all existing records that are related to the primary key record.
+
+
