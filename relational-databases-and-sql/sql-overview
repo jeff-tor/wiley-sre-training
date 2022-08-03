@@ -1,0 +1,43 @@
+in this chapter you will learn how to
+
+discuss the originals of SQL
+demo syntax features of core SQL, letter cases, spaces, quotation marks and semi-colons
+
+SQL - stands for Structured Query Language, the programming language used to communicate with database to perform operations
+
+in SQL, the official term to define a complete command is a STATEMENT, but normally we use QUERY to refer to any SQL statement.
+
+Very IMPORTANT to have basic foundational knowledge of standard SQL because the world revolves around data and you will benefit alot just by learning how to script for data manipulation.
+
+Syntax - refers to ordering of text that can be recognized by SQL
+
+below is an example of SQL syntax:
+
+SELECT field1, field1, field3
+FROM table1
+WHERE criteria
+ORDER BY field1, field2;
+
+take note that SQL syntax requirements are VERY STRICT so be sure to constantly refer to documentation. MOST SQL statements require the use of semi-colons at every end of statement. LINE BREAKS and INDENTS are useful for readability and formatting.
+
+an example:
+
+CREATE TABLE `Client` (
+    ClientId CHAR(36) PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    BirthDate DATE NULL,
+    Address VARCHAR(256) NULL,
+    City VARCHAR(100) NULL,
+    StateAbbr CHAR(2) NULL,
+    PostalCode VARCHAR(10) NULL,
+    FOREIGN KEY fk_Client_StateAbbr (StateAbbr)
+        REFERENCES State(StateAbbr)
+);
+
+LETTER CASES are useful for formatting, it is reccomended to capitalize keywords in CAPS.
+
+COMMAS are used to seperate objects in a series.
+SPACES are required for every logical word in a statement.
+QUOTATION MARKS can either be '' or "" as long as used in pairs
+SPELLING just take note !
