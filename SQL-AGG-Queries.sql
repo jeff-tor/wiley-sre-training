@@ -263,6 +263,26 @@ FROM table1
 -- 27 rows (27 unique email extensions)
 --------------------
 
+WITH table1 as(
+SELECT
+ClientId,
+EmailAddress,
+	CASE WHEN EmailAddress LIKE ('%.com')
+	THEN 'email_com'
+	WHEN EmailAddress LIKE ('%.net')
+    THEN 'email_net'
+	WHEN EmailAddress LIKE ('%.org')
+    THEN 'email_org'
+    ELSE 'others'
+    END AS EmailType
+FROM LOGIN)
+
+SELECT
+EmailType, 
+count(EmailType)
+FROM table1
+GROUP BY EmailType
+
 -- Stretch Goal!
 -- Match client goals to workout goals.
 -- Select Client FirstName and LastName and Workout.Name for
