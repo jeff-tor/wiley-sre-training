@@ -1,0 +1,15 @@
+-regular methods
+-class methods
+-static methods
+
+--regular methods
+in a class automatically take the instance as the first arg.
+
+
+--class methods
+automatically take the class as the first arg.
+
+#for example
+@classmethod
+def set_raise_amt(cls, amount):
+	cls.raise_amt = 1.04

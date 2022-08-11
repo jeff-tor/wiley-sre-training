@@ -72,3 +72,12 @@ print(emp_1.fullname())
 Employee.fullname(emp_1)
 
 
+--notes
+
+A class is the highest hierachy in this context, so if I have pay_raise set as 1.04 in the class.
+Accessing the pay_raise through these instnaces labelled emp_1/2 will allow me
+to inherit the values assigned at the class level. However, if the instance is
+assigned with pay_raise of 1.05, for e.g emp_1.pay_raise = 1.05, then the rate
+for emp_1 will be 1.05, while the rest of the emps will have 1.04. 
+
+
