@@ -1,0 +1,74 @@
+Python classes
+
+--what is a python class ?
+
+a python class is like an outline for creating a new object. An object is anything that you wish to manipulate or change while working through the code. For example when we declare a new variable with a value, this becomes a object.
+
+--class for dating profiles
+
+we will implrment a class object for AI dating algorithm.
+
+--class object purpose
+
+what do we want this class object to do ? 
+1. create a new profile
+2. add the profile to a larger pool of dating profiles
+3. scale or vectorize that profile for ML friendly purposes
+
+--constructing a class
+
+import pandas as pd
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.preprocessing import MinMaxScaler
+
+class createProfile:
+	def __init__(self):
+
+--what is an '__init__' function
+
+it's a function called when a class is instantiated, meaning declared. For example. createProfile() or profile = createProfile()
+
+--lets create a random class
+
+class Bottle:
+	def __init__(self, volume, type_):
+		self.volume = volume
+		self.type_= type_
+
+	def pour(self):
+		print("pouring..")
+	def fill(self):
+		print("filling..")
+	def recycle(self):
+		print("recycling..")
+
+#this creates a class employees with attributes
+class Employee:
+	num_of_emps = 0
+	raise_amount = 1.04
+
+	def __init__(self, first, last, pay): #always instantiate with init	
+		self.first = first
+		self.last = last
+		self.pay = pay
+		self.email = first + '.' + last + '@company.com'
+
+		Employee.num_of_emps += 1
+
+	def fullname(self):
+		return '{} {}'.format(self.first, self.last)
+
+	def apply_raise(self):
+		self.pay = int(self.pay * self.raise_amount)
+
+emp_1 = ["John","Snow","50000"]
+emp_2 = ["Jeff","Tor","200000"]
+
+
+#calls the class which was defined with the method of printing first and last name
+print(emp_1.fullname())
+
+#calls the class employee, with the object fullname and the instance emp_1
+Employee.fullname(emp_1)
+
+
