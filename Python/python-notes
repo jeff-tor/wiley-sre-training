@@ -8,4 +8,11 @@ Sequence
 Numeric
 Text
 
+list = mutable list
+can you append a value to a list? YES
 
+tuple = is immutable, unable to change values within 
+when you go with tuple, need to go with index
+
+fruit = ("apple","banana","orange")
+print(fruit[0])
