@@ -46,4 +46,25 @@ storage["cupboard"].sort()
 
 #activity 6
 
+price = {
+    "milk" : 4,
+    "butter": 2,
+    "crackers": 1.5,
+    "rice" : 2.25,
+    "spaghetti" : 1.75,
+    "dish soap": 3.25
+}
+quantity = {
+    "milk" : 1,
+    "butter" : 1,
+    "crackers" : 3,
+    "rice" : 2,
+    "spaghetti" : 5,
+    "dish soap": 1
+}
 
+total_cost = 0
+for i in price:
+    total_cost += (price[i]*quantity[i])
+
+print("The total cost is ",total_cost)
