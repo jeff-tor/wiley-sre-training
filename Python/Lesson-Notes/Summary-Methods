@@ -13,3 +13,5 @@ automatically take the class as the first arg.
 @classmethod
 def set_raise_amt(cls, amount):
 	cls.raise_amt = 1.04
+
+

@@ -61,8 +61,8 @@ class Employee:
 	def apply_raise(self):
 		self.pay = int(self.pay * self.raise_amount)
 
-emp_1 = ["John","Snow","50000"]
-emp_2 = ["Jeff","Tor","200000"]
+emp_1 = ("John","Snow","50000")
+emp_2 = ("Jeff","Tor","200000")
 
 
 #calls the class which was defined with the method of printing first and last name
