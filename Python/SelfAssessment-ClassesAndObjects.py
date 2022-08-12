@@ -1,6 +1,6 @@
 class SimpleCalculator:
     def __init__(self, x, y):
-        
+
         self.x = x
         self.y = y
 
@@ -30,6 +30,7 @@ if set2 == "exit" or set1 == "quit":
 
 set1 = int(set1)
 set2 = int(set2)
+
 
 n1 = SimpleCalculator(set1,set2)
 

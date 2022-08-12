@@ -19,6 +19,7 @@ class House:
 	def sentence(self):
 		print(self.type_, self.size_)
 
+
 appliance_1 = Appliances('Computer','Aluminium','Small')
 appliance_2 = Appliances("Fridge","Aluminium","Big")
 appliance_3 = Appliances("Aircon","Plastic","Medium")
