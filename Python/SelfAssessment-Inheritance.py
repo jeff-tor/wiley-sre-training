@@ -22,11 +22,13 @@ class CsvFile:
         self.filename = filename
         self.filesize = filesize
 
-        
+class JpgFile:
+    def __init__(self, filename, filesize):
+        self.filename = filename
+        self.filesize = filesize
 
-class JpgFile
-    pass
 
-
-class Mp3File
-    pass
+class Mp3File:
+    def __init__(self, filename, filesize):
+        self.filename = filename
+        self.filesize = filesize
