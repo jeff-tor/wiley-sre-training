@@ -60,3 +60,19 @@ HowToMSexcel.display()
 PythonBasics.display()
 janjan_02.display()
 janjan_01.display()
+
+#activity 5
+
+class vlogVideos(movies):
+    def __init__(self, name, genre, platform)
+        self.name = name
+        self.genre = genre
+        self.platform = platform
+
+
+#activity 6
+
+inf = vlogVideos("DayInTheLife","Calm","Youtube")
+print(isinstance(inf, tiktok_videos))
+print(isinstance(inf, videos))
+print(isinstance(inf, movies))
