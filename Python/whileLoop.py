@@ -22,5 +22,3 @@ print(num)
 color = random.choice(["red","yellow])
 print(color)
 
-
-#turtle

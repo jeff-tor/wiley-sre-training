@@ -11,3 +11,4 @@ for i in range(0, num+1):
 	else:
 		print(i)
 
+#for this to work you must consider the elif and if loops,

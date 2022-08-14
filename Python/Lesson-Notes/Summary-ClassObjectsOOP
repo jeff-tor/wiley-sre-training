@@ -81,3 +81,10 @@ assigned with pay_raise of 1.05, for e.g emp_1.pay_raise = 1.05, then the rate
 for emp_1 will be 1.05, while the rest of the emps will have 1.04. 
 
 
+--notes
+
+Remember to practice proper coding principles such as not repeating any function in every class, if the same functions needs to be called, use the feature named inheritance, which can reference another class's method into the other class.
+
+
+
+
