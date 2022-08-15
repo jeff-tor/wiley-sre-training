@@ -1,0 +1,25 @@
+summary for github terminal version
+
+-benefits of using git terminal
+
+->> fully utilizing git
+	using git CLI allows us to use the full functionality of git, as GUi usually is designed with the typical end-users in mind, as such, there are many features that are not available through the graphical interface. For example, there is a git staging area for git CLI users that normally GUI users would not have found out.
+
+->> git encourages automation
+	using the cli for git allows scripts to be written to customize to every users case scenari
+
+
+Useful git cmds to take note
+
+git status - allows user to see the tracked changes to be made
+git add - prepares files to be added to git to a staging area
+git commit - adds a commit message to the staged files for recording and tracking
+git push - git push is the final step in pushing changes to the main repository
+
+git fetch - downloads all commits, and refs from a RR to my LR
+git pull - the difference between git pull and fetch is that, pull merges all changes from remote repo to local repo.
+
+git rm - removes files to be untracked 
+git restore - restores the files that are staged to unstage it
+
+
