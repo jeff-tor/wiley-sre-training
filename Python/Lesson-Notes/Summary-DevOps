@@ -1,0 +1,29 @@
+DevOps is the combination of cultural philosophies, practices, and tools that increases an organization's ability to deliver applications and services at high velocity: evolving and improving products at a faster pace than organizations using traditional software development and infrastructure management processes.
+
+DevOps are one team and own the application containing both developers and operations within a common language.
+The developers want to provide the latest features, quick changes and with in risk.
+The operation want to keep the product in stability, reliability, be repeatable and with cautious changes. 
+
+DevOps applies across people, processes and technology
+DevOps brings about major cultural and organizational changes while leveraging the power of automation and cloud computing.
+DevOps is not specific to any industry or market: its practices can be leveraged across big and small companies.
+
+Software Development Life Cycle(SDLC)
+Waterfall was adapted from construction and manufacturing. 
+• Changes in design are prohibitively more expensive. 
+• It requires each stage of design to be 100% correct before moving onto the 
+next.
+Waterfall Model:
+Requirement Analysis -> System Design -> Implementation -> Testing -> Deployment -> Maintenance
+
+Agile methodology is collaborative across teams and self-organizing. The longer and more dynamic a project is, the more waterfall models no longer work. Agile is more adaptable.
+5 phases of Agile:
+Forming - Storming - Norming - Performing - Adjourning
+
+There is a iteration loop continues 2-3 months each time for the product but the loop will continue again and again:
+Planning - Req Analysis - Designing - Building - Testing
+
+SRE - Site Reliablity Engineers
+SRE is a software engineering approach to IT operations. SRE teams use software as a tool to manage systems, solve problems, and automate operations tasks. SRE helps teams find a balance between releasing new features and making sure that they are reliable for users. SRE supports teams who are moving from a traditional approach to IT operations to a cloud-native approach.
+
+
