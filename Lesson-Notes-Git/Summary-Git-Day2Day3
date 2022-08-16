@@ -1,0 +1,28 @@
+Members : Ariff, Jeff, Pin Wei, Gerald  
+ 
+Step 1: we did a github summary between desktop and terminal versions  
+ 
+step 2 : got everyone on the same page on using github terminal, some of our team members faced issues such as not being able to git pull in the correct directory but eventually we managed to fix it.  
+ 
+step 3 : managed to set up a remote repo "room1" as a private repo, and managed to git clone to our local directory by inviting everyone as collaborators.     
+  
+ 
+ 
+step 4: faced issues with specifying permission levels for collaborators, but managed to tweak settings in the settings tab to enforce reviews before merge is accepted  
+ 
+step 5: managed to merge pull requests but as collaborators we were able to create and approve ourselves  
+ 
+step 6: we explored the assignees and reviewers section and assigned specific reviewers and assignees to the pull request for merging  
+ 
+step 7 : we explored trying to set specific permissions for collaborators but we believe it seems to be a paid feature only accessible to organization/paid accounts.  
+ 
+step 8 : hence we created another public repo just to test out the forking feature, which essentially creates a copy of the remote repo on github. More then one members fork the same repo and edit the same file and did a pull request to the main repo that we forked too. The owner of the repo will have the decision to accept or amend changes/conflicts  
+ 
+step 9 : we managed to create a conflict whereby a file was created in users local repository, and user tried to push the files with the same name into the remote repository, this causes a conflict. Upon git pull, the conflicted file is prompted for troubleshooting in the local repo, from the second user onwards.(Since first person successfully pushed the file)  
+ 
+step 10: the conflicted files will be updated with the conflicted content. We will now choose either one content to keep and execute  
+git add   
+git commit  
+git push  
+ 
+to finalize the conflicted changes. This will resolve the conflicts and we are able to push it onto github.

@@ -22,3 +22,5 @@ print(num)
 color = random.choice(["red","yellow])
 print(color)
 
+#to do list
+#expand on python function
