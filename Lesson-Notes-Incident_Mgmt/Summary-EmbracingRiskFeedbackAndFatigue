@@ -1,0 +1,97 @@
+--Embracing Risk
+Incidents will occur
+Prepare and Plan for them (Before incident)
+Practice response procedures (After incident)
+Error Budgets
+Change Velocity
+Opportunity for improvement
+Avoid heroics
+On-call rotation 
+
+--Failure of when, and not if
+Complexity of system guarantees hardware failure
+Cloud 
+Security attacks
+Organization may or may not know they have been attacked
+Database corruption
+Component update
+Behave unexpectedly
+Google: 70% of failures are due to component/configuration change
+
+--On-call Rotation
+Hard to provide 24/7 service availability
+It is really required?
+Is the support centralized or global?
+How are hand-offs handled?
+Heroics
+Attraction of acclaim for saving the data
+Set expectations
+Burnout
+
+--Alert Fatigue
+Common when systems are at an edge point
+Alerts have self-heal cycles
+Monitoring cycles repeatedly alert the same issue
+False positive alert
+Often leads to ignored alerts
+Will self-heal
+Think it is not really an issue
+Too many alerts
+
+--Burnout
+On-call rotation and alert fatigue lead to following symptoms
+Missed deadlines
+Behavioural changes
+Chronic health issues
+Obsession with problems
+Self-doubt
+Isolation
+
+--Continuous Improvement
+Automation
+Manual tasks vs toil
+Documentation
+Reducing Toil
+Update SLO
+Update monitoring/SLI
+Update alerts
+
+--Automation
+Manual tasks vs toil 
+Automation is not automatic
+Not all toil should be automated
+
+--Documentation
+Documentation needs to be kept updated
+Postmortems
+Engineered improvements
+Better procedures
+Corrections discovered during practice
+
+--Reducing Toil
+Tasks that are toil don’t provide a lot of value. Rather, they keep engineers from progressing with product and service development.
+If teams spend the majority of their time on these tasks, they have less time for high-value work. This prohibits innovation.
+
+--Benefits of Reducing Toil
+Time freed up can be saved and reinvested.
+Prevent future toil from emerging. In that sense, it’s a positive spiral.
+
+--Update SLO
+Important to consider when Service Level Objectives need to be adjusted
+Might be up or down
+Focus on business expectations
+Customer satisfaction
+
+--Update Monitoring/SLI
+Better Service Level Indicators identified
+More accurate alerting
+Better warning of pending incidents
+
+--Update Alerts
+Eliminate false positives
+Improve information that accompanies alert
+Point to likely resources for faster fix
+Assign some alerts to automate ticket generation
+Focus on those that need immediate human intervention
+
+

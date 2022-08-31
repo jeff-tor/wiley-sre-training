@@ -1,0 +1,105 @@
+In this module, we will learn what an incident is, the primary roles and responsibilities during incident management and the key parts of incident response procedures.
+Learning objectives
+• Define an incident
+• Define incident management
+• Managing incidents effectively
+• Understanding the Enterprise Command Center
+• Work through some incident identification and severity decisions
+
+--What is an incident ?
+An unplanned interruption of a service, or reduction in the quality of a service.
+
+--What is an incident manaegment plan ?
+• Clearly describe the issue
+• How detected or who manually triggered the incident
+• Date and time the incident was reported
+• Description of the incident
+• Incident category
+• Level of the incident
+
+--Levels of Incident
+SEV 1 = A critical disruption to the business that requires public notification and coordination with the executive teams.
+SEV 2 = A major incident with significant impact on customers' ability to use the service
+SEV 3 = A minor incident with low impact that require immediate attention
+SEV 4 = A minor issue with no impact on the customers' ability to use the service
+
+--What is Incident Management?
+• Structured approach to incident response
+• Adapted from Incident Command System Enhances
+ Control
+ Coordination
+ Communication
+
+
+--Importance of Incident Management
+1- Identify key role and clear chain of command
+2- Define responsibilities
+3- Capture response efforts for future analysis and learning
+4- Communicate
+
+--Benefits of Incident Management Planning
+• Clearly defining a chain of command.
+• Everyone involved having a single person to report to.
+• Defined communications channels for clear and rapid communication.
+• Provide a systematic procedure to follow.
+• Clear focus on recovery of the business capabilities.
+
+--Incident Action Planning
+1- Cover a specified timefram
+2- Be proactive towards resolving
+3- Assign responsibilities
+
+--Accountability
+
+• Clearly identify yourself and your role
+• Response operations need to be coordinated as directed by the
+Incident Commander.
+• Personal accountability for actions
+• Track changes to the normal operations of the business
+• Span of Control monitored to adequately supervise areas
+
+--Incident Commander
+Responsible for overall coordination
+• Keepsincidentmovingtowardsresolution
+Coordinates all the other roles
+• Defactoholderofanyrolesnotdelegatedto others
+Delegates tasks
+• Shouldnotbepersonallymakingchanges
+Only role always filled
+
+--Scribe
+Assists IC
+• Capturescommunication
+• Capturesactions
+• Capturesdiscussionfrom conference bridge
+Use visible communication tool
+• Chatroom(Slack/Teams/etc)
+• Googledocs
+Focus on capturing all information for future use
+
+--Operations Lead
+Works with the IC
+• Developtheoriesaboutwhatisbrokenandwhy
+• RecommendchangestotheIC
+• Coordinatetheoperationteam'seffortsto restore the service
+Makes sure changes are made in a controlled manner
+Makes sure that only operation teams are making changes to the system
+Brings in subject matter experts (SMEs) to assist
+
+--Communications Lead
+Communications are critical • Internal
+• External
+Periodic updates
+• Status page
+• Social media
+• Direct communication
+May be delegated to maintain incident documentation
+• Communication
+• Post incident analysis
+
+--Planning Lead
+Supports OL and IC
+• Capturinglong-termissues
+• Creatingtickets
+• Arranginghandoffs
+• TrackingsystemdivergencefromSLO
